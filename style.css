@@ -1,11 +1,31 @@
 main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-#left, #right {
-  width: 50%;
+.poem {
+  width: 43vw;
+  height: 200px;
+  overflow: scroll;
+  border: 3px solid lightgray;
+  border-radius: 0.5vw;
+  margin: 10px;
+  padding: 10px;
+}
+
+#left {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+}
+
+#right {
+  font-family: 'Bellefair', serif;
+  font-size: 24px;
+}
+
+.active {
+  border-color: lightskyblue;
 }
 
 #hint {

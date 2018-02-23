@@ -2,12 +2,12 @@ const $ = query => document.querySelector(query);
 
 const a = [
   [`I look up to Twenty One Pilots`,
-  `Because they’re crazy talented`,
+  `Because they’re wildly talented`,
   `I admire the efficiency of a two-piece band`],
 
   [`But I also look at them and see a straight, white man`,
   `And his straight, white friend`,
-  `Saying “If we can make it, anyone can”`,
+  `Saying: <i>If we can make it, anyone can</i>`,
   `And I’m sad`],
 
   [`I have to wonder how much of their success is due to talent`,
@@ -19,7 +19,7 @@ const a = [
 
   [`And I think about how their music is built on top of the creativity of black Americans`],
 
-  [`Tyler Joseph can say “This is not rap / this is not hip hop”`,
+  [`Tyler Joseph can say <i>This is not rap / this is not hip hop</i>`,
   `But saying so doesn’t make it true`,
   `Even if it were, we can thank black America for rock and roll, too`],
 
@@ -72,8 +72,10 @@ const next = () => {
     hint.classList.remove('hidden');
   }, 5000);
 
+
   if (!stanza || !stanza.length) {
     el.appendChild(br());
+    el.classList.remove('active');
     isLeft = !isLeft;
     el = isLeft ? left : right;
     poem = isLeft ? a : b;
@@ -87,10 +89,15 @@ const next = () => {
     return;
   }
 
+  el.classList.add('active');
+
   const line = document.createElement('div');
   line.innerHTML = stanza.shift();
   line.classList.add('fade');
   el.appendChild(line);
+
+  // Scroll to bottom.
+  el.scrollTop = el.scrollHeight;
 };
 
 next(); // Reveal first line.
