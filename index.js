@@ -86,6 +86,12 @@ let stanza = poem.shift();
 let hintTimeout;
 
 const next = () => {
+  // Immediately unhide previously added words.
+  $$('span').forEach((w) => {
+    w.classList.remove('fade');
+    w.classList.remove('hidden');
+  });
+
   hint.classList.add('hidden');
   clearTimeout(hintTimeout);
   hintTimeout = setTimeout(() => {
@@ -117,15 +123,20 @@ const next = () => {
   words.forEach((word, i) => {
     const timePerWord = 150;
     const wordSpan = document.createElement('span');
-    wordSpan.classList.add('fade');
+
+    wordSpan.classList.add('hidden');
     wordSpan.innerHTML = word + ' ';
+    line.appendChild(wordSpan);
 
     setTimeout(() => {
-      line.appendChild(wordSpan);
-
-      // Scroll to bottom.
-      el.scrollTop = el.scrollHeight;
+      if (wordSpan.classList.contains('hidden')) {
+        wordSpan.classList.remove('hidden');
+        wordSpan.classList.add('fade');
+      }
     }, timePerWord * i);
+
+    // Scroll to bottom.
+    el.scrollTop = el.scrollHeight;
   });
 };
 
