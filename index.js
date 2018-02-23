@@ -47,11 +47,30 @@ const a = [
 ];
 
 const b = [
-  [`You see a white tower on a hill.`],
-  [`The hill seems so tall, and the tower so far.`],
-  [`There are other things around, but you can't bring yourself to see them.`],
-  [`So you walk towards the hill.`],
-  [`You surprise yourself. Before you know it you're at the foot of the hill and already climbing.`],
+  [`You see a white tower on a hill.`,
+  `The hill seems so tall, and the tower so far.`,
+  `There are other things around, but you can't bring yourself to see them.`,
+  `So you walk towards the hill.`],
+  [`You surprise yourself. Before you know it you're at the foot of the hill and already climbing.`,
+  `It's like you were born for this. You haven't broken a sweat.`,
+  `You close your eyes. You bring your focus to the breeze on your skin.`,
+  `You look at your feet and think about nothing at all.`,
+  `Every time it crosses your mind to look up, you can't believe how far you've come.`],
+  [`You can see now that the tower is built up of a million bricks.`,
+  `It doesn't yet occur to you to ponder who laid the bricks.`,
+  `Who painted them.`],
+  [`The closer you get, the more imposing the tower becomes.`,
+  `But also, looking back, the hill doesn't seem quite so tall as it used to.`],
+  [`An oak door sits at the base of the tower.`,
+  `What can you do but approach it?`],
+  [`You reach out and grasp the knob.`,
+  `You're not sure what to expect,`,
+  `but you turn it, and the door opens.`],
+  [`There's not much inside the tower.`,
+  `A staircase corkscrews along the walls,`,
+  `&nbsp;&nbsp;&nbsp;&nbsp;up`,
+  `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and up`,
+  `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and up...`],
 ];
 
 const left = $('#left');
