@@ -38,7 +38,7 @@ main {
 }
 
 .fade {
-  animation: 3.5s fadeIn;
+  animation: 1s fadeIn;
 }
 
 @keyframes fadeIn {

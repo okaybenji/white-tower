@@ -1,4 +1,5 @@
 const $ = query => document.querySelector(query);
+const $$ = query => [].slice.call(document.querySelectorAll(query));
 
 const a = [
   [`I look up to Twenty One Pilots`,
@@ -7,7 +8,7 @@ const a = [
 
   [`But I also look at them and see a straight, white man`,
   `And his straight, white friend`,
-  `Saying: <i>If we can make it, anyone can</i>`,
+  `Saying: <i>If&nbsp;we&nbsp;can&nbsp;make&nbsp;it,&nbsp;anyone&nbsp;can</i>`,
   `And I’m sad`],
 
   [`I have to wonder how much of their success is due to talent`,
@@ -19,12 +20,12 @@ const a = [
 
   [`And I think about how their music is built on top of the creativity of black Americans`],
 
-  [`Tyler Joseph can say <i>This is not rap / this is not hip hop</i>`,
+  [`Tyler Joseph can say <i>This&nbsp;is&nbsp;not&nbsp;rap&nbsp;/&nbsp;this&nbsp;is&nbsp;not&nbsp;hip&nbsp;hop</i>`,
   `But saying so doesn’t make it true`,
   `Even if it were, we can thank black America for rock and roll, too`],
 
   [`And we can thank them for jazz`,
-  `Read up on <a href="https://morningsidereview.org/essay/black-rhythm-white-power/" target=_new>Dixieland</a>`,
+  `Read up on <a href="https://morningsidereview.org/essay/black-rhythm-white-power/">Dixieland</a>`,
   `Then ask me how I feel about La La Land`],
 
   [`Something can be a great work of art and also problematic`,
@@ -56,7 +57,7 @@ const b = [
   `You close your eyes. You bring your focus to the breeze on your skin.`,
   `You look at your feet and think about nothing at all.`,
   `Every time it crosses your mind to look up, you can't believe how far you've come.`],
-  [`You can see now that the tower is built up of a million bricks.`,
+  [`You can see now that the tower is built up of a <i>million</i> bricks.`,
   `It doesn't yet occur to you to ponder who laid the bricks.`,
   `Who painted them.`],
   [`The closer you get, the more imposing the tower becomes.`,
@@ -109,14 +110,23 @@ const next = () => {
   }
 
   el.classList.add('active');
-
   const line = document.createElement('div');
-  line.innerHTML = stanza.shift();
-  line.classList.add('fade');
   el.appendChild(line);
 
-  // Scroll to bottom.
-  el.scrollTop = el.scrollHeight;
+  const words = stanza.shift().split(' ');
+  words.forEach((word, i) => {
+    const timePerWord = 150;
+    const wordSpan = document.createElement('span');
+    wordSpan.classList.add('fade');
+    wordSpan.innerHTML = word + ' ';
+
+    setTimeout(() => {
+      line.appendChild(wordSpan);
+
+      // Scroll to bottom.
+      el.scrollTop = el.scrollHeight;
+    }, timePerWord * i);
+  });
 };
 
 next(); // Reveal first line.
