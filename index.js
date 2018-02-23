@@ -24,7 +24,7 @@ const a = [
   `Even if it were, we can thank black America for rock and roll, too`],
 
   [`And we can thank them for jazz`,
-  `Read up on Dixieland`,
+  `Read up on <a href="https://morningsidereview.org/essay/black-rhythm-white-power/" target=_new>Dixieland</a>`,
   `Then ask me how I feel about La La Land`],
 
   [`Something can be a great work of art and also problematic`,
@@ -57,29 +57,23 @@ const b = [
 const left = $('#left');
 const right = $('#right');
 const hint = $('#hint');
+const br = () => document.createElement('br');
 
 let isLeft = true;
 let el = isLeft ? left : right;
 let poem = a;
 let stanza = poem.shift();
-let allowClick = true;
 let hintTimeout;
 
 const next = () => {
-  if (!allowClick) {
-    return;
-  }
-
-  allowClick = false;
-
   hint.classList.add('hidden');
   clearTimeout(hintTimeout);
   hintTimeout = setTimeout(() => {
     hint.classList.remove('hidden');
   }, 5000);
 
-  if (!stanza.length) {
-    el.innerHTML += `<br>`;
+  if (!stanza || !stanza.length) {
+    el.appendChild(br());
     isLeft = !isLeft;
     el = isLeft ? left : right;
     poem = isLeft ? a : b;
@@ -87,21 +81,16 @@ const next = () => {
   }
 
   if (!stanza) {
-    allowClick = true;
+    if (a.length || b.length) {
+      next();
+    }
     return;
   }
 
-  const line = stanza.shift();
-
-  line.split(``).forEach((character, i) => {
-    setTimeout(() => {
-      el.innerHTML += character;
-      if (i + 1 === line.length) {
-        el.innerHTML += `<br>`;
-        allowClick = true;
-      }
-    }, 50 * i);
-  });
+  const line = document.createElement('div');
+  line.innerHTML = stanza.shift();
+  line.classList.add('fade');
+  el.appendChild(line);
 };
 
 next(); // Reveal first line.

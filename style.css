@@ -1,9 +1,11 @@
-#left {
-  float: left;
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#right {
-  float: right;
+#left, #right {
+  width: 50%;
 }
 
 #hint {
@@ -13,4 +15,13 @@
 
 .hidden {
   display: none;
+}
+
+.fade {
+  animation: 3.5s fadeIn;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }
