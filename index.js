@@ -25,7 +25,7 @@ const a = [
   `Even if it were, we can thank black America for rock and roll, too`],
 
   [`And we can thank them for jazz`,
-  `Read up on <a href="https://morningsidereview.org/essay/black-rhythm-white-power/">Dixieland</a>`,
+  `Read up on Dixieland`,
   `Then ask me how I feel about La La Land`],
 
   [`Something can be a great work of art and also problematic`,
@@ -53,8 +53,8 @@ const b = [
   `There are other things around, but you can't bring yourself to see them.`,
   `So you walk towards the hill.`],
   [`You surprise yourself. Before you know it you're at the foot of the hill and already climbing.`,
-  `It's like you were born for this. You haven't broken a sweat.`,
-  `You close your eyes. You bring your focus to the breeze on your skin.`,
+  `It's like you were born for this. You haven't broken a sweat.`],
+  [`You close your eyes. You bring your focus to the breeze on your skin.`,
   `You look at your feet and think about nothing at all.`,
   `Every time it crosses your mind to look up, you can't believe how far you've come.`],
   [`You can see now that the tower is built up of a <i>million</i> bricks.`,
@@ -66,16 +66,16 @@ const b = [
   `What can you do but approach it?`],
   [`You reach out and grasp the knob.`,
   `You're not sure what to expect,`,
-  `but you turn it, and the door opens.`],
+  `But you turn it, and the door opens.`],
   [`There's not much inside the tower.`,
   `A staircase corkscrews along the walls,`,
-  `&nbsp;&nbsp;&nbsp;&nbsp;up`,
+  `&nbsp;&nbsp;&nbsp;&nbsp;Up`,
   `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and up`,
   `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and up...`],
 ];
 
-const left = $('#left');
-const right = $('#right');
+const left = $('#left .poem');
+const right = $('#right .poem');
 const hint = $('#hint');
 const br = () => document.createElement('br');
 

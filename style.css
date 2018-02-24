@@ -28,9 +28,20 @@ main {
   border-color: lightskyblue;
 }
 
+#left img {
+  height: 295.72px;
+  float: left;
+}
+
+#right img {
+  width: 244px;
+  float: right;
+}
+
 #hint {
   color: lightgray;
-  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 24px;
 }
 
 .hidden {
