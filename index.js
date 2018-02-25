@@ -2,7 +2,7 @@ const $ = query => document.querySelector(query);
 const $$ = query => [].slice.call(document.querySelectorAll(query));
 
 const sfx = new Howl({
-  src: ['./sounds/voice.webm', './sounds/voice.mp3'],
+  src: ['./sounds/sfx.webm', './sounds/sfx.mp3'],
   sprite,
 });
 
@@ -127,8 +127,8 @@ const next = () => {
   }
 
   sfx.stop(soundId);
-  sfx.stereo(isLeft ? -0.5 : 0.5);
   soundId = sfx.play((isLeft ? 'a' + i : 'b' + j));
+  sfx.stereo(isLeft ? -0.5 : 0.5, soundId);
   el.classList.add('active');
   const line = document.createElement('div');
   el.appendChild(line);
@@ -154,5 +154,9 @@ const next = () => {
   });
 };
 
-next(); // Reveal first line.
-document.addEventListener('click', next);
+sfx.on('load', () => {
+  next(); // Reveal first line.
+  document.addEventListener('click', next);
+  const id = sfx.play('ambient-loop');
+  sfx.volume(0.25, id);
+});
