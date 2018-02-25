@@ -6,7 +6,7 @@ main {
 
 .poem {
   width: 43vw;
-  height: 200px;
+  height: 75vh;
   overflow: scroll;
   border: 3px solid lightgray;
   border-radius: 0.5vw;
@@ -29,12 +29,12 @@ main {
 }
 
 #left img {
-  height: 295.72px;
+  height: 25vh;
   float: left;
 }
 
 #right img {
-  width: 244px;
+  height: 25vh;
   float: right;
 }
 

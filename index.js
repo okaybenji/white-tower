@@ -1,6 +1,11 @@
 const $ = query => document.querySelector(query);
 const $$ = query => [].slice.call(document.querySelectorAll(query));
 
+const sfx = new Howl({
+  src: ['./sounds/voice.webm', './sounds/voice.mp3'],
+  sprite,
+});
+
 const a = [
   [`I look up to Twenty One Pilots`,
   `Because they’re wildly talented`,
@@ -82,6 +87,9 @@ const br = () => document.createElement('br');
 let isLeft = true;
 let el = isLeft ? left : right;
 let poem = a;
+let i = 0;
+let j = 1;
+let soundId;
 let stanza = poem.shift();
 let hintTimeout;
 
@@ -98,6 +106,7 @@ const next = () => {
     hint.classList.remove('hidden');
   }, 5000);
 
+  isLeft ? i++ : j++;
 
   if (!stanza || !stanza.length) {
     el.appendChild(br());
@@ -111,10 +120,15 @@ const next = () => {
   if (!stanza) {
     if (a.length || b.length) {
       next();
+    } else {
+      clearTimeout(hintTimeout);
     }
     return;
   }
 
+  sfx.stop(soundId);
+  sfx.stereo(isLeft ? -0.5 : 0.5);
+  soundId = sfx.play((isLeft ? 'a' + i : 'b' + j));
   el.classList.add('active');
   const line = document.createElement('div');
   el.appendChild(line);
