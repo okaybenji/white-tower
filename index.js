@@ -127,8 +127,10 @@ const next = () => {
   }
 
   sfx.stop(soundId);
-  soundId = sfx.play((isLeft ? 'a' + i : 'b' + j));
-  sfx.stereo(isLeft ? -0.5 : 0.5, soundId);
+  if (isLeft) { // Temporarily disable narration of story.
+    soundId = sfx.play((isLeft ? 'a' + i : 'b' + j));
+    sfx.stereo(isLeft ? -0.5 : 0.5, soundId);
+  }
   el.classList.add('active');
   const line = document.createElement('div');
   el.appendChild(line);
