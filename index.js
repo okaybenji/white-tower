@@ -37,7 +37,7 @@ const a = [
   `Emblematic of the dark history of this country`,
   `Brought about by its light-skinned denizens`,
   `And highlighted, openly and gleefully, by the white nationalist in the oval office`,
-  `Spouting american neo-Nazi slogans from the day he was sworn in`,
+  `Spouting American neo-Nazi slogans from the day he was sworn in`,
   `“America first”`],
 
   [`The Beatles are the greatest band of all time...`,
