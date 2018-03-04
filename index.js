@@ -108,6 +108,10 @@ const next = () => {
 
   isLeft ? i++ : j++;
 
+  if (i === 19) {
+    $('img').src = 'images/a2.png';
+  }
+
   if (!stanza || !stanza.length) {
     el.appendChild(br());
     el.classList.remove('active');
