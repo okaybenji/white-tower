@@ -40,6 +40,30 @@ const a = [
   `Spouting American neo-Nazi slogans from the day he was sworn in`,
   `“America first”`],
 
+  [`I think a lot of our problems as a society come from a need to see things in black and white`,
+   `We want to put every person, place, thing, idea, and feeling into a box:`,
+   `This is good; this is bad`,
+   `I go here; you go there`],
+
+  [`We can make rules that feel obvious and simple`,
+   `Like, <i>discrimination&nbsp;based&nbsp;on&nbsp;race&nbsp;is&nbsp;wrong</i>`,
+   `We can apply these rules with a heavy hand`,
+   `We can feel justified in our anger towards anyone who violates them`],
+
+  [`Why is Colin Kaepernick so despised?`,
+   `The answer is cognitive dissonance`],
+
+   [`This country is good`,
+   `Therefore criticizing this country is bad`,
+   `If I were complicit in a racist system, that would make me bad`,
+   `But I am good, so the system is not racist`],
+
+  [`There's no room in this thinking for subtlety`,
+   `It makes us comfortable`,
+   `But to take comfort in this, you must already be comfortable`,
+   `The grayness of the world is a cold morning`,
+   `But the warm blanket wrapped around you is black, and it is white`],
+
   [`The Beatles are the greatest band of all time...`,
   `I want to tell people`,
   `I want to tell people about my favorite director`,
@@ -48,7 +72,7 @@ const a = [
 
   [`I have a bookshelf four feet wide and six feet tall`,
   `Full of books I love`,
-   `Written by men`,
+  `Written by men`,
   `And it took me thirty years to realize this was happening`],
 ];
 
@@ -57,26 +81,65 @@ const b = [
   `The hill seems so tall, and the tower so far.`,
   `There are other things around, but you can't bring yourself to see them.`,
   `So you walk towards the hill.`],
+
   [`You surprise yourself. Before you know it you're at the foot of the hill and already climbing.`,
   `It's like you were born for this. You haven't broken a sweat.`],
+
   [`You close your eyes. You bring your focus to the breeze on your skin.`,
   `You look at your feet and think about nothing at all.`,
   `Every time it crosses your mind to look up, you can't believe how far you've come.`],
+
   [`You can see now that the tower is built up of a <i>million</i> bricks.`,
   `It doesn't yet occur to you to ponder who laid the bricks.`,
   `Who painted them.`],
+
   [`The closer you get, the more imposing the tower becomes.`,
   `But also, looking back, the hill doesn't seem quite so tall as it used to.`],
+
   [`An oak door sits at the base of the tower.`,
   `What can you do but approach it?`],
+
   [`You reach out and grasp the knob.`,
   `You're not sure what to expect,`,
   `But you turn it, and the door opens.`],
+
   [`There's not much inside the tower.`,
   `A staircase corkscrews along the walls,`,
   `&nbsp;&nbsp;&nbsp;&nbsp;Up`,
   `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and up`,
   `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and up...`],
+
+  [`So you climb.`,
+   `And once again, the climb is effortless.`,
+   `You're no longer surprised that things are so easy.`,
+   `You're just <i>good</i> at this.`,
+   `And that's okay, you think. It's okay to take pride in your talents.`],
+
+  [`Every so often, you pass a window.`,
+   `You glance outside and gauge your progress.`,
+   `There are others coming up the hill now.`,
+   `It's not so easy for everyone, you can see.`,
+   `But it's the same hill. The same climb. You put in the work, and so can they.`],
+
+  [`You think about how it will feel at the top.`,
+   `All these flights and you're not even winded.`,
+   `It's only a matter of time now.`],
+
+  [`It feels just like a dream.`,
+   `In your dreams, you can soar as a bird.`,
+   `You can flap your wings as long as you want. They'll never tire.`,
+   `You can spend hours beneath the surface of the ocean.`,
+   `As soon as it occurs to you how long you've held your breath,`
+   `You realize you've been breathing all this time.`],
+
+  [`Time, time, time.`,
+   `Funny thing, time.`,
+   `Only goes in one direction. Never stops, never falters.`,
+   `It's like you, on these stairs.`],
+
+  [`Will the steps never end?`,
+   `You've been climbing ever since you can remember`,
+   `Ah well, you've come this far. No sense stopping now...`],
 ];
 
 const left = $('#left .poem');
