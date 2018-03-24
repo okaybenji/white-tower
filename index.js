@@ -64,6 +64,10 @@ const a = [
    `The grayness of the world is a cold morning`,
    `But the warm blanket wrapped around you is black, and it is white`],
 
+  [`I think James Damore was too comfortable at Google`,
+   `I think maybe he wrapped himself up so tightly in his black-and-white blanket`,
+   `That he cut off circulation to his well-paid brain`],
+
   [`The Beatles are the greatest band of all time...`,
   `I want to tell people`,
   `I want to tell people about my favorite director`,
