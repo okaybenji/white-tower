@@ -50,13 +50,13 @@ const a = [
    `We can apply these rules with a heavy hand`,
    `We can feel justified in our anger towards anyone who violates them`],
 
-  [`Why is Colin Kaepernick so despised?`,
+  [`Why is Colin Kaepernick so divisive?`,
    `The answer is cognitive dissonance`],
 
-   [`This country is good`,
+   [`“This country is good`,
    `Therefore criticizing this country is bad`,
    `If I were complicit in a racist system, that would make me bad`,
-   `But I am good, so the system is not racist`],
+   `But I am good, so the system is not racist”`],
 
   [`There's no room in this thinking for subtlety`,
    `It makes us comfortable`,
@@ -78,6 +78,37 @@ const a = [
   `Full of books I love`,
   `Written by men`,
   `And it took me thirty years to realize this was happening`],
+  
+  [`Growing up, people told me I could be anything I wanted`,
+   `My 5th grade homeroom teacher said that I was going to be a star`,
+   `I believed her`,
+   `I swallowed the American dream whole`,
+   `But even now that I've thrown it back up`,
+   `I'm still under its spell`,
+   `Still climbing that white tower`,
+   `With its endless steps`],
+  
+  [`Straight, white, male, middle class`,
+   `If I <i>can't</i> make it, what chance does anyone else have?`],
+  
+  [`Like the bigshot producer in The Disaster Artist says,`,
+   `<i>Just&nbsp;because&nbsp;you&nbsp;want&nbsp;it&nbsp;doesn't&nbsp;mean&nbsp;it's&nbsp;going&nbsp;to&nbsp;happen</i>`,
+   `<i>Even&nbsp;with&nbsp;the&nbsp;talent&nbsp;of&nbsp;Brando&nbsp;it's&nbsp;one&nbsp;in&nbsp;a&nbsp;million</i>`,
+   `Well, Brando's talent and skin color anyway`],
+  
+  [`Don't tell people they can “make it”`,
+   `You're setting us up for failure`,
+   `Tell us we can do something we <i>actually&nbsp;have&nbsp;a&nbsp;decent&nbsp;shot&nbsp;at&nbsp;doing<i>`],
+  
+  [`We can do work that is fulfilling`,
+   `We can do work that is cathartic`,
+   `We can do work that we can share with our loved ones`,
+   `Some of them might even come around to seeing things the way we do`],
+  
+  [`We can give opportunities to those who don't come across them so often as we do`],
+  
+  [`We can strip the paint off of this tower`,
+   `We can show people who laid these bricks`]
 ];
 
 const b = [
@@ -133,7 +164,7 @@ const b = [
    `In your dreams, you can soar as a bird.`,
    `You can flap your wings as long as you want. They'll never tire.`,
    `You can spend hours beneath the surface of the ocean.`,
-   `As soon as it occurs to you how long you've held your breath,`
+   `As soon as it occurs to you how long you've held your breath,`,
    `You realize you've been breathing all this time.`],
 
   [`Time, time, time.`,
