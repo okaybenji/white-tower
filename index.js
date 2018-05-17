@@ -151,7 +151,7 @@ const b = [
    `And that's okay, you think. It's okay to take pride in your talents.`],
 
   [`Every so often, you pass a window.`,
-   `You glance outside and gauge your progress.`,
+   `You glance outside to gauge your progress.`,
    `There are others coming up the hill now.`,
    `It's not so easy for everyone, you can see.`,
    `But it's the same hill. The same climb. You put in the work, and so can they.`],
