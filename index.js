@@ -46,9 +46,15 @@ const a = [
    `I go here; you go there`],
 
   [`We can make rules that feel obvious and simple`,
-   `Like, <i>discrimination&nbsp;based&nbsp;on&nbsp;race&nbsp;is&nbsp;wrong</i>`,
+   `Like, <i>discrimination&nbsp;based&nbsp;on&nbsp;immutable&nbsp;traits&nbsp;is&nbsp;wrong</i>`,
    `We can apply these rules with a heavy hand`,
    `We can feel justified in our anger towards anyone who violates them`],
+
+  [`But nothing in the world is so simple as we'd like to believe`,
+   `Sometimes discrimination is <i>right</i>`,
+   `With only one restaurant in all of Japan allowing women to prepare sushi`,
+   `Wouldn't it be wrong for that restaurant to hire a man?`,
+   `To do so would be to deny one more woman the right to choose her profession`],
 
   [`Why is Colin Kaepernick so divisive?`,
    `The answer is cognitive dissonance`],
@@ -68,16 +74,10 @@ const a = [
    `I think maybe he wrapped himself up so tightly in his black-and-white blanket`,
    `That he cut off circulation to his well-paid brain`],
 
-  [`The Beatles are the greatest band of all time...`,
-  `I want to tell people`,
-  `I want to tell people about my favorite director`,
-  `My favorite author`,
-  `But then I realize they all have three things in common`],
-
-  [`I have a bookshelf four feet wide and six feet tall`,
-  `Full of books I love`,
-  `Written by men`,
-  `And it took me thirty years to realize this was happening`],
+  [`As white men, neither James nor I have to think about marginalization`,
+   `It's something we can turn on and off at will`,
+   `If the thoughts are too troubling, we can choose to think about something else`,
+   `A growing number of people in the United States don't have this luxury`],
   
   [`Growing up, people told me I could be anything I wanted`,
    `My 5th grade homeroom teacher said that I was going to be a star`,
@@ -97,7 +97,20 @@ const a = [
    `We can do work that we can share with our loved ones`,
    `Some of them might even come around to seeing things the way we do`],
   
-  [`We can give opportunities to those who don't come across them so often as we do`],
+  [`The Beatles are the greatest band of all time...`,
+    `I want to tell people`,
+    `I want to tell people about my favorite director`,
+    `My favorite author`,
+    `But then I realize they all have three things in common`],
+
+  [`I have a bookshelf four feet wide and six feet tall`,
+    `Full of books I love`,
+    `Written by men`,
+    `And it took me thirty years to realize this was happening`],
+
+  [`It doesn't have to be this way`,
+   `We can choose to listen to the voices others have silenced`,
+   `We can give opportunities to those who don't come across them so often as we do`],
   
   [`We can strip the paint off of this tower`,
    `We can show people who laid these bricks`]
@@ -164,9 +177,23 @@ const b = [
    `Only goes in one direction. Never stops, never falters.`,
    `It's like you, on these stairs.`],
 
-  [`Will the steps never end?`,
-   `You've been climbing ever since you can remember`,
-   `Ah well, you've come this far. No sense stopping now...`],
+  [`You're vaguely aware that your mind is wandering.`,
+   `Sometimes you forget how easy things have been.`,
+   `Sometimes you even forget you're climbing at all.`,
+   `Sometimes, passing a window, you look out dumbly and don't see anything.`],
+
+  [`Other times you remember the countless steps you've taken.`,
+   `You're frustrated.`,
+   `You've been climbing ever since you can remember.`,
+   `To think of all the time you've invested...`,
+   `It's your <i>right</i> to reach the top.`,
+   `Someone's up there now, looking out over all who seek to ascend this tower.`,
+   `It should be you, you've decided.`],
+
+   [`But you have to wonder, will these stairs really end?`,
+    `Ah, well.`,
+    `You've come this far.`,
+    `No sense stopping now.`]
 ];
 
 const left = $('#left .poem');
