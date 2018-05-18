@@ -87,15 +87,7 @@ const a = [
    `I'm still under its spell`,
    `Still climbing that white tower`,
    `With its endless steps`],
-  
-  [`Straight, white, male, middle class`,
-   `If I <i>can't</i> make it, what chance does anyone else have?`],
-  
-  [`Like the bigshot producer in The Disaster Artist says,`,
-   `<i>Just&nbsp;because&nbsp;you&nbsp;want&nbsp;it&nbsp;doesn't&nbsp;mean&nbsp;it's&nbsp;going&nbsp;to&nbsp;happen</i>`,
-   `<i>Even&nbsp;with&nbsp;the&nbsp;talent&nbsp;of&nbsp;Brando&nbsp;it's&nbsp;one&nbsp;in&nbsp;a&nbsp;million</i>`,
-   `Well, Brando's talent and skin color anyway`],
-  
+
   [`Don't tell people they can “make it”`,
    `You're setting us up for failure`,
    `Tell us we can do something we <i>actually&nbsp;have&nbsp;a&nbsp;decent&nbsp;shot&nbsp;at&nbsp;doing<i>`],
