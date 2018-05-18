@@ -298,6 +298,7 @@ sfx.on('load', () => {
   next(); // Reveal first line.
   document.addEventListener('click', next);
   document.addEventListener('keyup', next);
+  document.addEventListener('touchstart', next);
   const id = sfx.play('ambient-loop');
   sfx.volume(0.25, id);
 });
