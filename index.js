@@ -178,7 +178,7 @@ const b = [
   [`As time carries on, it gets harder to tell how far you've come.`,
    `You're moving ever-upward, there's no denying that.`,
    `But from one window to the next,`,
-   `The views get just <i>that</i> much harder to tell apart.`],
+   `The views get just <i>that</i> much harder to distinguish.`],
 
   [`Sometimes it's a little surreal.`],
 
