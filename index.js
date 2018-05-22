@@ -44,7 +44,7 @@ const a = [
    `I want to tell people`,
    `I want to tell people about my favorite director`,
    `My favorite author`,
-   `But then I realize they all have three things in common`],
+   `But suddenly I realize they all have three things in common`],
 
   [`I have a bookshelf four feet wide and six feet tall`,
     `Full of books I love`,
