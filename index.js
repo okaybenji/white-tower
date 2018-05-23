@@ -107,7 +107,7 @@ const a = [
 
   [`Don't tell people they can “make it”`,
    `You're setting us up for failure`,
-   `You're setting us up to believe that those who <i>have</i> failed weren't good enough,`
+   `You're setting us up to believe that those who <i>have</i> failed weren't good enough,`,
    `Didn't try <i>hard</i> enough`,
    `Tell us we can do something we <i>actually&nbsp;have&nbsp;a&nbsp;decent&nbsp;shot&nbsp;at&nbsp;doing<i>`,
    `We can do work that is fulfilling`,
