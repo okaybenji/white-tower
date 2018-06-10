@@ -63,8 +63,8 @@ const a = [
    `This is good; this is bad`,
    `I go here; you go there`],
 
-  [`We can make rules that feel obvious and simple`,
-   `Like, <i>discrimination&nbsp;based&nbsp;on&nbsp;immutable&nbsp;traits&nbsp;is&nbsp;wrong</i>`,
+  [`We can make rules that feel obvious and simple, like:`,
+   `<i>Discrimination&nbsp;based&nbsp;on&nbsp;immutable&nbsp;traits&nbsp;is&nbsp;wrong</i>`,
    `We can apply these rules with a heavy hand`,
    `We can feel justified in our anger towards anyone who violates them`],
 
@@ -94,10 +94,10 @@ const a = [
   [`As white men, neither James nor I have to think about marginalization`,
    `It's something we can turn on and off at will`,
    `If the thoughts are too troubling, we can choose to think about something else`,
-   `A growing number of people in the United States don't have this luxury`],
+   `A growing number of people in the United States do not have this luxury`],
   
   [`Growing up, people told me I could be anything I wanted`,
-   `My 5th grade homeroom teacher said that I was going to be a star`,
+   `My 5th grade homeroom teacher said I was going to be a star`,
    `I believed her`,
    `I swallowed the American dream whole`,
    `But even now that I've thrown it back up`,
@@ -147,7 +147,7 @@ const b = [
    `What can you do but approach it?`],
 
   [`You reach out and grasp the knob.`,
-   `You're not sure what to expect,`,
+   `You are not sure what to expect,`,
    `But you turn it, and the door opens.`],
 
   [`There's not much inside the tower.`,
@@ -169,7 +169,7 @@ const b = [
    `But it's the same hill. The same climb. You put in the work, and so can they.`],
 
   [`You think about how it will feel at the top.`,
-   `All these flights and you're not even winded.`,
+   `All these flights and you are not even winded.`,
    `It's only a matter of time now.`],
 
   [`Your sense of pride grows.`,
@@ -186,14 +186,15 @@ const b = [
 
   [`It feels just like a dream.`,
    `In your dreams, you can soar as a bird.`,
-   `You can flap your wings as long as you want. They'll never tire.`,
+   `You can flap your wings as long as you want. They will never tire.`,
    `You can spend hours beneath the surface of the ocean.`,
    `As soon as it occurs to you how long you've held your breath,`,
    `You realize you've been breathing all this time.`],
 
   [`Time, time, time.`,
    `Funny thing, time.`,
-   `Only goes in one direction. Never stops, never falters.`,
+   `Only goes in one direction.`,
+   `Never stops, never falters.`,
    `It's like you, on these stairs.`],
 
   [`You're vaguely aware that your mind is wandering.`,
@@ -267,10 +268,10 @@ const next = () => {
   }
 
   sfx.stop(soundId);
-  if (isLeft) { // Temporarily disable narration of story.
-    soundId = sfx.play((isLeft ? 'a' + i : 'b' + j));
-    sfx.stereo(isLeft ? -0.5 : 0.5, soundId);
-  }
+
+  soundId = sfx.play((isLeft ? 'a' + i : 'b' + j));
+  sfx.stereo(isLeft ? -0.25 : 0.25, soundId);
+
   el.classList.add('active');
   const line = document.createElement('div');
   el.appendChild(line);
